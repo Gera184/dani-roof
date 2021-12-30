@@ -7,20 +7,15 @@ import Favorites from "./components/favorites/Favorites";
 
 export default () => {
   return (
-    <div
-      style={{
-        backgroundImage: "url(https://cdn.wallpapersafari.com/3/89/53j19Z.jpg)",
-        width: "100%",
-        height: "100%",
-        overflowY: "hidden",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        fontFamily: "Spartan sans-serif",
-      }}
-    >
+    <div>
       <Header />
       <Router>
         <Switch>
+          <Route
+            exact
+            path="https://dani-roof.herokuapp.com/"
+            component={Main}
+          />
           <Route exact path="/" component={Main} />
           <Route exact path="/home" component={Main} />
           <Route path="/favorites" component={Favorites} />
