@@ -7,7 +7,17 @@ import Favorites from "./components/favorites/Favorites";
 
 export default () => {
   return (
-    <div className="app">
+    <div
+      style={{
+        backgroundImage: "url(https://cdn.wallpapersafari.com/3/89/53j19Z.jpg)",
+        width: "100%",
+        height: "100%",
+        overflowY: "hidden",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        fontFamily: "Spartan sans-serif",
+      }}
+    >
       <Header />
       <Router>
         <Switch>
