@@ -1,0 +1,26 @@
+.loading {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top: 8px solid orange;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.03);
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    filter: blur(0px);
+  }
+
+  50% {
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: rotate(359deg);
+    filter: blur(0px);
+  }
+}

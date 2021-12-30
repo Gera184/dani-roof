@@ -1,0 +1,4 @@
+export const ActionTypes = {
+  SET_LOCATION_KEY: "SET_LOCATION_KEY",
+  SELECTED_CITY: "SELECTED_CITY",
+};
